@@ -1,0 +1,180 @@
+.supercontainer h1 {
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+.supercontainer h1 span {
+    font-size: 7rem;
+    margin-left: -60px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+.supercontainer p {
+    font-family: 'Lora', serif;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(0,0,0,.9);
+    font-weight: 900;
+}
+#reactions-chart-container {
+     max-width: 1000px;
+ }
+
+#keywords-chart-container {
+    max-width: 1000px;
+}
+
+.tweet {
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    width: 400px;
+}
+
+.tweet-avatar {
+    max-height: 50px;
+}
+
+.supercontainer {
+    width: 100%;
+    height: 100%;
+    background: url(../img/homephoto.jpg) no-repeat center center / cover;
+    position: relative;
+    display: table;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    background: rgba(51, 51, 0, .3);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2em 0;
+}
+
+.header h1 {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    color: #fbfbfb;
+    font-size: 2.75rem;
+    font-weight: normal;
+    text-align: center;
+    font-weight: 900;
+}
+
+.header input {
+    width: 50%;
+    display: inline;
+}
+
+.header button {
+    background-color: rgb(255, 102, 102);
+    height: 40px;
+    width: 100px;
+    font-weight: 500;
+    color: white;
+}
+
+.searched {
+    height: 30%;
+    transition: .5s ease;
+}
+
+.searchcontainer {
+    width: 100%;
+    height: 70%;
+    background-color: rgba(255,255,255,1);
+}
+
+.resultscontainer {
+    padding-top: 10%;
+    color: rgba(0,0,0,.3)
+}
+
+.resultscontainer h2 {
+    font-weight: 900;
+}
+
+
+#map-container {
+    margin-top: 20px;
+}
+
+.datacontainer h1 {
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #444;
+    font-size: 4em;
+}
+@media(max-width:40em) {
+    .datacontainer h1 {
+    font-size: 2em;
+    }
+}
+
+@media(min-width:40em) {
+    legend ul {
+        padding-top:50px;
+    }
+    #map-container {
+    margin-top: -00px;
+}
+}
+
+.legend ul li {
+    list-style: none;
+}
+
+.piedesc {
+    padding: 10px;
+}
+
+.pie {
+    height: 300px;
+}
+
+#map {
+    height: 600px;
+    width: 600px;
+}
+
+@media(min-width:810px) {
+    #map {
+        width:800px;
+        height: 800px;
+    }
+}
+
+@media(max-width:40em) {
+    #map {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.tweet-username {
+    font-weight: 900;
+    color: #444;
+}
+
+.tweet {
+    padding: 10px;
+    margin:10px;
+    border-color: lightgray;
+    max-width: 300px;
+}
+.datacontainer {
+    margin-bottom: 50px;
+}
+
+.tweet-content:before {
+    content: "'";
+}
+.tweet-content:after {
+    content: "'";
+}
+
+.tweeters {
+    margin-bottom: 20px;
+    padding: 10px;
+}
