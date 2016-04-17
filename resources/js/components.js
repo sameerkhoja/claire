@@ -4,7 +4,7 @@ var DoughnutChart = React.createClass({
         return {
             options: {
                 responsive: true,
-                legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><div style=\"display:inline-block;background-color:<%=segments[i].fillColor%>;height:13px;width:13px;\"></div>&nbsp;<%if(segments[i].label){%><%=segments[i].label%>: <%=segments[i].value%><%}%></li><%}%></ul>"
+                legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><div style=\"display:inline-block;background-color:<%=segments[i].fillColor%>;height:13px;width:13px;\"></div>&nbsp;<%if(segments[i].label){%><%=segments[i].label%>: <%=segments[i].value%>%<%}%></li><%}%></ul>"
             }
         };
     },
@@ -67,7 +67,7 @@ var Map = React.createClass({
                 },
                 areasSettings: {
                     autoZoom: false,
-                    balloonText: "<strong>[[title]]</strong>: [[percent]]%<br/>[[description]]<br/>Total: [[value]]"
+                    balloonText: "<strong>[[title]]</strong>: [[percent]]%"
                 },
                 zoomControl: {
                     homeButtonEnabled: false,

@@ -28,7 +28,7 @@ var complete_data = [];
 var tweetCount = 0;
 var id_array = [];
 
-var counter = 1;
+var counter = 5;
 
 function req(query) {
   T.get('search/tweets', {q: query , count: countNumber, max_id: maxID}, function(err, data, response){
