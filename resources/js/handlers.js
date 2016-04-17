@@ -333,7 +333,7 @@ function submitSearch() {
                             checkData();
                         });
 
-                    }, 3000);
+                    }, 5000);
                 }
             });
         }, 5000);

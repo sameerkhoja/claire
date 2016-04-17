@@ -96,25 +96,26 @@ app.get('/', function (request, response) {
 });
 
 app.get('/submit/:query', function(request, response){
+	complete_data = [];
   fs.exists(path.join(__dirname, 'data/' + encodeURIComponent(request.params.query) + '.json'), function(exists) {
 	  if(exists)
 		  fs.unlink('data/' + encodeURIComponent(request.params.query) + '.json');
   });
-	fs.exists(path.join(__dirname, 'savedData.json'), function(exists) {
+	fs.exists(path.join(__dirname, '/savedData.json'), function(exists) {
 		  if(exists)
-			  fs.unlink('savedData.json');
+			  fs.unlink(path.join(__dirname, '/savedData.json'));
 	  });
-	fs.exists(path.join(__dirname, 'SavedStates.json'), function(exists) {
+	fs.exists(path.join(__dirname, '/SavedStates.json'), function(exists) {
 		  if(exists)
-			  fs.unlink('SavedStates.json');
+			  fs.unlink(path.join(__dirname, '/SavedStates.json'));
 	  });
-	fs.exists(path.join(__dirname, 'savedTweets.json'), function(exists) {
+	fs.exists(path.join(__dirname, '/savedTweets.json'), function(exists) {
 		  if(exists)
-			  fs.unlink('savedTweets.json');
+			  fs.unlink(path.join(__dirname, '/savedTweets.json'));
 	  });
-	fs.exists(path.join(__dirname, 'savedTweetsBad.json'), function(exists) {
+	fs.exists(path.join(__dirname, '/savedTweetsBad.json'), function(exists) {
 		  if(exists)
-			  fs.unlink('savedTweetsBad.json');
+			  fs.unlink(path.join(__dirname, '/savedTweetsBad.json'));
 	  });  
   req(request.params.query);
   response.send("hello world!");
@@ -123,7 +124,31 @@ app.get('/submit/:query', function(request, response){
 app.get('/exists/:query', function(request, response) {
 	fs.exists(path.join(__dirname, 'data/' + encodeURIComponent(request.params.query) + '.json'), function(exists) {
 		if(exists) {
-			response.send('{ "exists": true }');
+			fs.exists(path.join(__dirname, '/savedData.json'), function(exists) {
+				if(exists) {
+					fs.exists(path.join(__dirname, '/SavedStates.json'), function(exists) {
+						if(exists) {
+							fs.exists(path.join(__dirname, '/savedTweets.json'), function(exists) {
+								if(exists) {
+									fs.exists(path.join(__dirname, '/savedTweetsBad.json'), function(exists) {
+										if(exists) {
+											response.send('{ "exists": true }');
+										} else  {
+											response.send('{ "exists": false }');
+										}
+									});
+								} else {
+									response.send('{ "exists": false }');
+								}
+							});
+						} else {
+							response.send('{ "exists": false }');
+						}
+					});
+				} else {
+					response.send('{ "exists": false }');
+				}
+			});
 		} else {
 			response.send('{ "exists": false }');
 		}
