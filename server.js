@@ -116,7 +116,7 @@ app.get('/submit/:query', function(request, response){
 	fs.exists(path.join(__dirname, '/savedTweetsBad.json'), function(exists) {
 		  if(exists)
 			  fs.unlink(path.join(__dirname, '/savedTweetsBad.json'));
-	  });  
+	  });
   req(request.params.query);
   response.send("hello world!");
 });
@@ -163,6 +163,6 @@ app.use('/data', express.static(path.join(__dirname, 'data')));
 
 app.use('/', express.static(__dirname));
 
-app.listen(80, function () {
-  console.log('Claire listening on port 80');
+app.listen(3000, function () {
+  console.log('Claire listening on port 3000');
 });
