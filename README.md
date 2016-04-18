@@ -11,9 +11,9 @@ Claire's favorite inputs:
 ##Screenshots
 Inline-style: 
 ![alt text](https://github.com/samkho10/claire/blob/master/title.png "Title")
-![alt text](https://github.com/samkho10/claire/1.png "1")
-![alt text](https://github.com/samkho10/claire/2.png "2")
-![alt text](https://github.com/samkho10/claire/3.png "3")
+![alt text](https://github.com/samkho10/claire/blob/master/1.png "Sentiment Analysis")
+![alt text](https://github.com/samkho10/claire/blob/master/2.png "Locatinal Analysis")
+![alt text](https://github.com/samkho10/claire/blob/master/3.png "Individual Analysis")
 
 
 Made with NodeJS, ReactJS, and Java's Bayes Classifer. Feel free to fork and contribute!
