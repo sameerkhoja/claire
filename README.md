@@ -9,7 +9,6 @@ Claire's favorite inputs:
 * Finding Dory
 
 ##Screenshots
-Inline-style: 
 ![alt text](https://github.com/samkho10/claire/blob/master/title.png "Title")
 ![alt text](https://github.com/samkho10/claire/blob/master/1.png "Sentiment Analysis")
 ![alt text](https://github.com/samkho10/claire/blob/master/2.png "Locatinal Analysis")
