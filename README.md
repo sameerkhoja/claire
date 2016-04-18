@@ -17,4 +17,4 @@ $ node index.js
 ```
 and check your port 80!
 
-Contributors: Sameer Khoja, Estella Xin, Brandon Harwood, John, and Richard.
+Contributors: Sameer Khoja, Estella Xin, Brandon Harwood, John, and Richard Kriesman.
