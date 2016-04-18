@@ -10,7 +10,7 @@ Claire's favorite inputs:
 
 ##Screenshots
 Inline-style: 
-![alt text](https://github.com/samkho10/claire/master/title.png "Title")
+![alt text](https://github.com/samkho10/claire/blob/master/title.png "Title")
 ![alt text](https://github.com/samkho10/claire/1.png "1")
 ![alt text](https://github.com/samkho10/claire/2.png "2")
 ![alt text](https://github.com/samkho10/claire/3.png "3")
