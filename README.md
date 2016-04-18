@@ -8,6 +8,14 @@ Claire's favorite inputs:
 * iPhone 7
 * Finding Dory
 
+##Screenshots
+Inline-style: 
+![alt text](https://github.com/samkho10/claire/title.png "Title")
+![alt text](https://github.com/samkho10/claire/1.png "1")
+![alt text](https://github.com/samkho10/claire/3.png "2")
+![alt text](https://github.com/samkho10/claire/2.png "3")
+
+
 Made with NodeJS, ReactJS, and Java's Bayes Classifer. Feel free to fork and contribute!
 
 ##How to Run
@@ -17,4 +25,4 @@ $ node index.js
 ```
 and check your port 80!
 
-Contributors: Sameer Khoja, Estella Xin, Brandon Harwood, John, and Richard.
+Contributors: Sameer Khoja, Estella Xin, Brandon Harwood, John, and Richard Kriesman.
