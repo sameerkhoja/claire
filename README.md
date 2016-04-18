@@ -8,6 +8,11 @@ Claire's favorite inputs:
 * iPhone 7
 * Finding Dory
 
+##Screenshots
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+
 Made with NodeJS, ReactJS, and Java's Bayes Classifer. Feel free to fork and contribute!
 
 ##How to Run
