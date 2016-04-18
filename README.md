@@ -12,8 +12,8 @@ Claire's favorite inputs:
 Inline-style: 
 ![alt text](https://github.com/samkho10/claire/title.png "Title")
 ![alt text](https://github.com/samkho10/claire/1.png "1")
-![alt text](https://github.com/samkho10/claire/3.png "2")
-![alt text](https://github.com/samkho10/claire/2.png "3")
+![alt text](https://github.com/samkho10/claire/2.png "2")
+![alt text](https://github.com/samkho10/claire/3.png "3")
 
 
 Made with NodeJS, ReactJS, and Java's Bayes Classifer. Feel free to fork and contribute!
