@@ -10,4 +10,11 @@ Claire's favorite inputs:
 
 Made with NodeJS, ReactJS, and Java's Bayes Classifer. Feel free to fork and contribute!
 
+##How to Run
+```
+$ npm install
+$ node index.js
+```
+and check your port 80!
+
 Contributors: Sameer Khoja, Estella Xin, Brandon Harwood, John, and Richard.
