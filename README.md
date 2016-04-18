@@ -1,7 +1,7 @@
 # Claire: Your personalized trend analyzer.
 
 ## Description
-Claire is a tool that utilizes machine learning and bayesian sentiment analysis to predict consumer reactions to trendy ideas.
+Claire is a tool that utilizes machine learning and bayesian sentiment analysis to predict consumer reactions to trendy topics.
 
 Claire's favorite inputs:
 * Trump
